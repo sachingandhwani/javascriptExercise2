@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JS Exercise 2</title>
+
+<style>
+body{font-family: Arial, Helvetica, sans-serif; font-size:15px;}
+table{min-width:400px}
+table, th, td {
+  border: 1px solid black; 
+}
+td {
+  padding: 10px;
+}
+#result{margin-top:10px}
+</style>
+</head>
+<body>
+<table style="margin-bottom:50px">
+	<tr>
+		<td>Enter a number</td>
+		<td><input type="text" name="num" id="getNumber"></td>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="button" value="Check Prime Number" onClick="printNumber()"></td>
+	</tr>
+	<tr>
+		<td id="result" colspan="2"></td>
+	</tr>
+</table>
+
+
+
+
+
+<table style="margin-bottom:50px">
+        <tbody>
+
+                <tr>
+                    <td colspan="2">
+                        <p>Create a sample application in JavaScript to find out a project based on their id’s and print it’s name and description.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Enter project ID</label></td>
+                    <td><input type="text" name="num" id="checkId" placeholder="Enter project ID"></td>
+					
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" value="Find Project" onClick="findProject()"></td>
+                </tr>
+                <tr>
+                    <td><label>Project details: </label></td>
+                    <td id="projectDetails"></td>
+                </tr>
+
+        </tbody>
+</table>
+	
+	
+<table>
+        <tbody>
+            <form name="formToAddProject" action="">
+                <tr>
+                    <td colspan="2">
+                        <p>Excersise 4</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Project Name</label></td>
+                    <td> <input type="text" id="pName" placeholder="Enter Project Name"></td>
+                </tr>
+                <tr>
+                <tr>
+                    <td><label>Status</label></td>
+                    <td><input type="text" id="pStatus" placeholder="Enter Status"></td>
+                </tr>
+                <td></td>
+                <td><input id="saveProject" type="button" onclick="addNewProject()" value="Save"></input></td>
+                </tr>
+            </form>
+        </tbody>
+    </table>
+	
+    <table>
+        <tr>
+            <td> <input type="button" value="Delete Row" onclick="deleteRow('showProjectList')"></input> </td>
+            <td><input id="updateButton" type="button" onClick="updateProjectStatus()" value="Mark Complete"></input>
+            </td>
+        </tr>
+    </table>
+	
+    <table id="showProjectList" style="margin-top:30px">
+		<tr>
+			<td></td>
+			<td>Id</td>
+			<td>Name</td>
+			<td>Status</td>
+		</tr>
+    </table>
+<script src="main.js"></script>	
+</body>
+</html>
